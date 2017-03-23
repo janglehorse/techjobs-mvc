@@ -18,7 +18,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.*;
  */
 @Controller
 @RequestMapping("search")
-public class SearchController {
+public class SearchController extends TechJobsController {
 
     @RequestMapping(method = GET)
     public String search(Model model) {
