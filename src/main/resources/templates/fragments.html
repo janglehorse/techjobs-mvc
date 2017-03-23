@@ -35,7 +35,11 @@
                     <div th:each="entry : ${map}">
                         <tr>
                             <td th:text="${#strings.capitalizeWords(entry.key)}"></td>
-                            <td th:text="${entry.value}"></td>
+                            <td><a th:href="@{/list/jobs(column=${entry.key},value=${entry.value})}"
+                                   th:text="${entry.value}"
+                                   th:if="${not entry.key.equals('name')}"></a>
+                                <p th:text="${entry.value}"
+                                   th:if="${entry.key.equals('name')}"></p></td>
                         </tr>
                     </div>
                 </table>
