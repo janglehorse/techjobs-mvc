@@ -16,8 +16,6 @@ import java.util.HashMap;
 @RequestMapping(value = "list")
 public class ListController extends TechJobsController {
 
-    static HashMap<String, String> columnChoices = new HashMap<>();
-
     public ListController () {
         columnChoices.put("core competency", "Skill");
         columnChoices.put("employer", "Employer");

@@ -9,7 +9,9 @@ import java.util.HashMap;
  */
 public class TechJobsController {
 
+    static HashMap<String, String> columnChoices = new HashMap<>();
     static HashMap<String, String> actionChoices = new HashMap<>();
+
 
     public TechJobsController(){
         actionChoices.put("search", "Search");
